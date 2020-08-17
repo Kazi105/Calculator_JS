@@ -1,0 +1,29 @@
+.calculator{
+	width: 300px;
+	margin: auto;
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+input{
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #403f3f;
+    color: #fff;
+    font-size: 18px;
+}
+button{
+    flex-basis: 20%;
+    max-width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #403f3f;
+    color: #fff;
+    font-size: 18px;
+}
+.equal{
+	flex-basis: 100%;
+    max-width: 100%;
+}

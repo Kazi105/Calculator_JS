@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Calculator</title>
+</head>
+<body>
+
+	<div class="calculator">
+		<input type="text" id="display"> <br>
+		<button onclick="one()">1</button>
+		<button onclick="two()">2</button>
+		<button onclick="three()">3</button>
+		<button onclick="four()">4</button>
+		<button onclick="five()">5</button>
+		<button onclick="six()">6</button>
+		<button onclick="seven()">7</button>
+		<button onclick="eight()">8</button>
+		<button onclick="nine()">9</button>
+		<button onclick="zero()">0</button>
+		<button onclick="add()">+</button>
+		<button onclick="sub()">-</button>
+		<button onclick="mul()">*</button>
+		<button onclick="dev()">/</button>
+		
+		<button onclick="clr()">C</button>
+		<button onclick="equal()" class="equal">=</button>
+	</div>
+
+
+
+	<script>
+		var Display = document.getElementById("display");
+
+		function one(){
+			Display.value += 1;
+		}
+		function two(){
+			Display.value += 2;
+		}
+		function three(){
+			Display.value += 3;
+		}
+		function four(){
+			Display.value += 4;
+		}
+		function five(){
+			Display.value += 5;
+		}
+		function six(){
+			Display.value += 6;
+		}
+		function seven(){
+			Display.value += 7;
+		}
+		function eight(){
+			Display.value += 8;
+		}
+		function nine(){
+			Display.value += 9;
+		}
+		function zero(){
+			Display.value += 0;
+		}
+		function add(){
+			Display.value += "+";
+		}
+		function sub(){
+			Display.value += "-";
+		}
+		function mul(){
+			Display.value += "*";
+		}
+		function dev(){
+			Display.value += "/";
+		}
+		function equal(){
+			var calculate = eval(Display.value);
+			Display.value = calculate;
+		}
+		function clr(){
+			Display.value = " ";
+		}
+
+	</script>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+</script>
+
+</body>
+</html>
